@@ -1,0 +1,73 @@
+@import "colors.scss";
+
+.navigation {
+
+	
+
+	// .navigation__selectors
+
+	&__selectors {
+		display: flex;
+		justify-content: flex-start;
+		overflow-x: auto;
+		align-items: center;
+		font-size: 16px;
+		color: $textGray;
+		letter-spacing: -0.2px;
+		padding-top: 24px;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+		padding-left: 16px;
+		line-height: 20px;
+		column-gap: 35px;
+		row-gap: 15px;
+
+		@media (min-width: 768px){
+			padding-left: 24px;
+			padding-bottom: 16px;
+			margin-bottom: 16px;
+		}
+
+		@media (min-width: 1440px){
+			padding-top: 15px;
+			flex-wrap: wrap;
+			padding-left: 32px;
+		}
+
+		&::-webkit-scrollbar{
+			//display: none;
+		}
+
+		.navigation__link{
+			color: $textGray;
+			border: solid 2px transparent;
+			padding: 8px 7px;
+			align-self: center;
+			transition: 0.3s;
+		}
+	}
+
+	// .navigation__selector
+
+	&__selector {
+		align-items: center;
+		width: max-content;
+		white-space: nowrap;
+	}
+
+	// .navigation__link
+
+	&__link {
+		@media (min-width: 768px) {
+			display: block;
+			width: max-content;
+		}
+
+		&:hover{
+			border-color: rgb(184, 255, 236);
+			border-radius: 6px;
+			background-color: #ffffff;
+			transition: 0.3s;
+		}
+	}
+}
