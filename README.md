@@ -1,1 +1,1 @@
-https://--.github.io/--/
+https://kyatru.github.io/maket-final/
